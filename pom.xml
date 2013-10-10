@@ -8,7 +8,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>guice-plugin-sample</module>
 		<module>primefaces-starter</module>
 		<module>design-patterns</module>
 		<module>math-algo</module>

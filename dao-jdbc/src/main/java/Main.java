@@ -1,10 +1,10 @@
-import impl.mysql.dao.UsersDAOImpl;
+import impl.mysql.dao.UserDAOImpl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-import model.Users;
-import dao.UsersDAO;
+import model.User;
+import dao.UserDAO;
 
 
 public class Main {
@@ -23,12 +23,12 @@ public class Main {
               Class.forName ("com.mysql.jdbc.Driver").newInstance ();
               conn = DriverManager.getConnection (url, userName, password);
               System.out.println ("Database connection established");
-              Users u1 = new Users();
+              User u1 = new User();
               u1.setName("Miro1");
-              Users u2 = new Users();
+              User u2 = new User();
               u2.setName("Miro2");
               u2.setId(1);
-              UsersDAO dao = new UsersDAOImpl();
+              UserDAO dao = new UserDAOImpl();
               u1.setId(2);
               dao.create(u1, conn);
 //              dao.create(u2, conn);

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:javaee="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-app_2_4.xsd"
+	version="2.4">
+	<description>FF Converter webapp</description>
+	<display-name>FF Converter</display-name>
+	<context-param>
+		<param-name>office.port</param-name>
+		<param-value>7010</param-value>
+	</context-param>
+	<context-param>
+		<param-name>fileupload.fileSizeMax</param-name>
+		<param-value>5242880</param-value>
+	</context-param>
+	<context-param>
+		<param-name>office.instancesnr</param-name>
+		<param-value>3</param-value>
+	</context-param>
+	<!--
+	<context-param>
+		<param-name>office.home</param-name>
+		<param-value>/opt/openoffice.org3</param-value>
+	</context-param>
+	-->
+	<listener>
+		<listener-class>ro.springsoft.web.WebappContextListener
+        </listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>ConverterServlet</servlet-name>
+		<servlet-class>ro.springsoft.web.ConverterServlet
+        </servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConverterServlet</servlet-name>
+		<url-pattern>/converted/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>FFConverterServlet</display-name>
+		<servlet-name>FFConverterServlet</servlet-name>
+		<servlet-class>ro.springsoft.web.FFConverterServlet
+        </servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FFConverterServlet</servlet-name>
+		<url-pattern>/FFConverter</url-pattern>
+	</servlet-mapping>
+</web-app>

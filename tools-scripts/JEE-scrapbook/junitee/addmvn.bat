@@ -1,0 +1,1 @@
+call mvn install:install-file -Dfile=junite2-2.0.0.jar -DgroupId=net.sourceforge.junitee -DartifactId=junite2 -Dversion=2.0.0 -Dpackaging=jar

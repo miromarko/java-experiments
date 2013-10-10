@@ -1,0 +1,9 @@
+#add driver after module 
+/subsystem=datasources/jdbc-driver=mysql:add(driver-name="mysql",driver-module-name="com.mysqldatabase.mysql",driver-xa-datasource-class-name="org.mysql.jdbc.Driver")
+
+
+#test connection
+
+/subsystem=datasources/xa-data-source=java\:jboss\/datasources\/mysql\/symbology:test-connection-in-pool
+
+/subsystem=datasources/data-source=java\:jboss\/datasources\/mysql\/symbology:test-connection-in-pool

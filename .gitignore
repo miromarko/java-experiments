@@ -1,0 +1,12 @@
+target/
+#NetBeans
+nb-configuration.xml
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+# Eclipse project files
+.classpath
+.project
+.settings/

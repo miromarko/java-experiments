@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	background: url(../img/tweed.png);
+}
+
+table {
+	margin: 2px 0 2px 0 !important;
+}
+
+th,td {
+	padding: 2px 4px 2px 4px !important;
+	text-align: left;
+	vertical-align: middle;
+}
+
+thead tr {
+}
+
+th.sorted {
+	background-color: #CCCCCC;
+}
+
+th a,th a:visited {
+	color: black;
+}
+
+th a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+th.sorted a,th.sortable a {
+	background-position: right;
+	display: block;
+}
+
+th.sortable a {
+	background-image: url(../img/arrow_off.png);
+    background-repeat: no-repeat;
+}
+
+th.order1 a {
+	background-image: url(../img/arrow_down.png);
+    background-repeat: no-repeat;
+}
+
+th.order2 a {
+	background-image: url(../img/arrow_up.png);
+    background-repeat: no-repeat;
+}
+
+tr.odd {
+	background-color: #fff
+}
+
+tr.tableRowEven,tr.even {
+	background-color: #CCCCCC
+}
+
+.group-1 {
+    font-weight:bold;
+    padding-bottom:10px;
+    border-top:1px solid black;
+}
+.group-2 {
+    font-style:italic;
+    border-top: 1px solid black;
+
+}
+
+.grouped-table tr.even {
+    background-color: #fff;
+}
+.grouped-table tr.odd {
+    background-color: #fff;
+}
+
+.header, .content-wrapper {
+	width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header {
+	color: #ccc;
+	text-shadow: 0px -1px 0px black;
+	width: 840px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+	.header .right-logo {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 120px;
+		height: 24px;
+	}
+
+.content-wrapper {
+	position: relative;
+	background-color: rgba(255,255,255,.9);
+    padding: 20px;
+    box-shadow: 0px 4px 30px -10px black;
+	border-top: 3px solid green;
+	border-bottom: 3px solid gray;
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+	.content-wrapper h3 {
+		margin-top: 0px;
+		padding: 20px 20px 10px 20px;
+		background-color: #ddd;
+		margin: -20px -20px 20px -20px;
+		text-shadow: 0px 1px 0px white;
+		font-size: 16px;
+	}
+	.content-wrapper input[type=text], select {
+		padding: 4px;
+		min-width: 130px;
+	}
+
+.field {
+	margin-bottom: 10px;
+}
+	.field-title {
+		width: 80px;
+		display: inline-block;
+		text-align: right;
+		margin-right: 10px;
+	}
+
+.errors {
+	color: red;
+	width: 300px;
+}
+
+.footer {
+	text-align: center;
+	color: gray;
+	font-size: 13px;
+	font-family: arial;
+	text-shadow: 0px 1px 0px black;
+}

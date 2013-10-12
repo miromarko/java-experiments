@@ -8,13 +8,10 @@
   <modules>
     <module>design-patterns</module>
     <module>math-algo</module>
-    <module>dao-jdbc</module>
     <module>thread-pool-java1.4</module>
     <module>office-pdf-converter</module>
-    <module>struts1-sample</module>
-    <module>primefaces-starter</module>
-    <module>guice-web</module>
     <module>data-importer-sample</module>
+    <module>web</module>
   </modules>
   <properties>
     <javaee6.web.spec.version>2.0.0.Final</javaee6.web.spec.version>

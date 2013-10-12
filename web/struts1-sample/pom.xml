@@ -2,13 +2,17 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>ro.springsoft</groupId>
-    <artifactId>java-experiments</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>web</artifactId>
+    <version>1.0-SNAPSHOT</version>
   </parent>
+  
+  <groupId>ro.springsoft</groupId>
   <artifactId>struts1-sample</artifactId>
+  <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
+  
   <modules>
-  	<module>poc1</module>
-  	<module>poc2</module>
+    <module>poc1</module>
+    <module>poc2</module>
   </modules>
 </project>

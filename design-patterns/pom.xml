@@ -16,6 +16,7 @@
 	<modules>
 		<module>pattern-factory</module>
 		<module>pattern-gateway</module>
+	 <module>dao-jdbc</module>
 	</modules>
 
 

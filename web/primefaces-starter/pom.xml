@@ -4,9 +4,9 @@
   xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>java-experiments</artifactId>
     <groupId>ro.springsoft</groupId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>web</artifactId>
+    <version>1.0-SNAPSHOT</version>
   </parent>
   <groupId>ro.sprinsoft</groupId>
   <artifactId>primefaces-starter</artifactId>

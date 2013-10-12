@@ -14,7 +14,6 @@
 		<module>thread-pool-java1.4</module>
 		<module>office-pdf-converter</module>
 		<module>struts1-sample</module>
-        <module>primefaces-starter</module>
     </modules>
 
     <properties>

@@ -7,11 +7,8 @@
   <packaging>pom</packaging>
   <modules>
     <module>design-patterns</module>
-    <module>math-algo</module>
-    <module>thread-pool-java1.4</module>
-    <module>office-pdf-converter</module>
-    <module>data-importer-sample</module>
     <module>web</module>
+    <module>various-projects</module>
   </modules>
   <properties>
     <javaee6.web.spec.version>2.0.0.Final</javaee6.web.spec.version>

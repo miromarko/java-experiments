@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app-config>
+    <configuration type="test">
+        <property name="mongoHostsTest">localhost</property>
+        <property name="mongoPortsTest">27017</property>
+    </configuration>
+    <!--select one additional config to load-->
+    <property name="config">test</property>
+    <!-- mongo tomcat adapter -->
+    <property name="mongoHosts">127.0.0.1</property>
+    <property name="mongoPorts">27017</property>
+    <!--NONE, SHARDING, REPLICA-->
+    <property name="mongoCluser">NONE</property>
+    <property name="mongoDB">symbology</property>
+    <property name="mongoCollectionUser">User</property>
+    <property name="userCol">_id</property>
+    <property name="passCol">passHash</property>
+    <property name="roleCol">roles</property>
+    <property name="pass_digest">MD5</property>
+    <property name="pass_encoding">UTF-8</property>
+    <!-- infinispan config -->
+    <property name="userCacheName">userCache</property>
+    <property name="evictionStrategy">LRU</property>
+    <property name="maxEntries">16000</property>
+    <!-- app config -->
+    <property name="nrRetriesMongo">3</property>
+    <property name="mongoRetriesThreadSleep">300</property>
+
+</app-config>

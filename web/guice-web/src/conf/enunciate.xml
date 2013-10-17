@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<enunciate label="SymbologyREST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="http://enunciate.codehaus.org/schemas/enunciate-1.27.xsd">
+    <namespaces>
+        <namespace id="api" uri="http://api.example.com/"/>
+        <namespace id="link" uri="http://api.example.com/link"/>
+        <namespace id="persona" uri="http://api.example.com/persona"/>
+    </namespaces>
+    <services>
+        <rest defaultRestSubcontext="/rest"/>
+    </services>
+
+    <modules>
+        <!-- Docs -->
+        <docs docsDir="restapi" splashPackage="ro.springsoft.guice.web.rest"
+              title="RESTEasy Guice Test REST API" copyright="Miro."
+              disableRestMountpoint="false" includeExampleJson="true" includeExampleXml="true"/>
+        <basic-app disabled="false" />
+        <c disabled="false" />
+        <csharp disabled="false" />
+        <java-client disabled="false" />
+        <jaxws-client disabled="false" />
+        <jaxws-ri disabled="false" />
+        <jaxws-support disabled="false" />
+        <jersey disabled="false" />
+        <obj-c disabled="false" />
+        <xml disabled="false" />
+    </modules>
+</enunciate>

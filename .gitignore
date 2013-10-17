@@ -1,5 +1,6 @@
 target/
 .forge_settings
+.log
 #NetBeans
 nb-configuration.xml
 nbactions.xml

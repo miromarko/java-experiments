@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <description>
-        Guice web projects: JPA2 - Hibernate, JAX-RS-RestEasy,
-        JSF2-Primefaces, tested on tomcat
-    </description>
-
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>ro.springsoft</groupId>
-        <artifactId>web</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
+    <artifactId>web</artifactId>
+    <groupId>ro.springsoft</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
 
     <groupId>ro.springsoft</groupId>
-    <artifactId>guice-web</artifactId>
+    <artifactId>guice-resteasy</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>guice-web</name>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    <name>guice-resteasy</name>
 
     <build>
-        <finalName>guice-web</finalName>
+        <finalName>guice-resteasy</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -127,5 +117,6 @@
             <url>http://repository.jboss.org/nexus/content/groups/public/</url>
         </repository>
     </repositories>
+
 
 </project>

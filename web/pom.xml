@@ -16,6 +16,8 @@
     <module>primefaces-starter</module>
     <module>struts1-sample</module>
     <module>guice-resteasy</module>
+    <module>ClickTest</module>
+    <module>guice-jsf2</module>
   </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -1,39 +1,36 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name>Archetype Created Click Web Application</display-name>
 
-<web-app>
+	<filter>
+		<filter-name>guiceFilter</filter-name>
+		<filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>guiceFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 
-  <display-name>Archetype Created Click Web Application</display-name>
-    
-  <servlet>
-    <servlet-name>ClickServlet</servlet-name>
-    <servlet-class>org.apache.click.ClickServlet</servlet-class>
-    <load-on-startup>0</load-on-startup>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>ClickServlet</servlet-name>
-    <url-pattern>*.htm</url-pattern>
-  </servlet-mapping>
-  
-  <welcome-file-list>
-    <welcome-file>redirect.html</welcome-file>
-  </welcome-file-list>
-  <!--
-	Provides a web application performance filter which compresses the response
-	and sets the Expires header on selected static resources. 
-	The "cachable-paths" init parameter tells the filter resources can have 
-	their Expires header set so the browser will cache them.
+	<listener>
+		<listener-class>ro.springsoft.clicktest.guice.ClickGuiceListener</listener-class>
+	</listener>
+
+	<!-- Provides a web application performance filter which compresses the 
+		response and sets the Expires header on selected static resources. The "cachable-paths" 
+		init parameter tells the filter resources can have their Expires header set 
+		so the browser will cache them. -->
 
 	<filter>
 		<filter-name>PerformanceFilter</filter-name>
 		<filter-class>org.apache.click.extras.filter.PerformanceFilter</filter-class>
 		<init-param>
 			<param-name>cachable-paths</param-name>
- 			<param-value>/assets/*</param-value>
+			<param-value>/assets/*, *.css</param-value>
 		</init-param>
 	</filter>
-	
+
 	<filter-mapping>
 		<filter-name>PerformanceFilter</filter-name>
 		<servlet-name>ClickServlet</servlet-name>
@@ -43,12 +40,12 @@
 		<filter-name>PerformanceFilter</filter-name>
 		<url-pattern>*.css</url-pattern>
 	</filter-mapping>
-	
+
 	<filter-mapping>
 		<filter-name>PerformanceFilter</filter-name>
 		<url-pattern>*.js</url-pattern>
 	</filter-mapping>
-	
+
 	<filter-mapping>
 		<filter-name>PerformanceFilter</filter-name>
 		<url-pattern>*.png</url-pattern>
@@ -58,6 +55,21 @@
 		<filter-name>PerformanceFilter</filter-name>
 		<url-pattern>*.jpg</url-pattern>
 	</filter-mapping>
- -->
-     	
+
+	<servlet>
+		<servlet-name>ClickServlet</servlet-name>
+		<servlet-class>org.apache.click.ClickServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClickServlet</servlet-name>
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+
+
+
+	<welcome-file-list>
+		<welcome-file>redirect.html</welcome-file>
+	</welcome-file-list>
+
 </web-app>

@@ -20,8 +20,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
                 <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
@@ -63,14 +63,23 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
-            <version>${servlet-api.version}</version>
+            <version>2.5</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+        	<groupId>com.google.inject.extensions</groupId>
+        	<artifactId>guice-servlet</artifactId>
+        	<version>3.0</version>
+        </dependency>
+        <dependency>
+        	<groupId>com.google.inject</groupId>
+        	<artifactId>guice</artifactId>
+        	<version>3.0</version>
         </dependency>
     </dependencies>
     <properties>
         <!-- versions -->
         <click.version>2.3.0</click.version>
-        <servlet-api.version>[2.,)</servlet-api.version>
         <jetty.version>7.6.3.v20120416</jetty.version>
         <junit.version>[4.,)</junit.version>
     </properties>

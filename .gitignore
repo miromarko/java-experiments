@@ -3,6 +3,7 @@ target/
 *.log
 #NetBeans
 nb-configuration.xml
+faces-config.NavData
 nbactions.xml
 # Intellij project files
 *.iml

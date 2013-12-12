@@ -5,7 +5,9 @@
 	<artifactId>various-projects</artifactId>
 	<version>1.0-SNAPSHOT</version>
   </parent>
+  <groupId>ro.springsoft</groupId>
   <artifactId>math-algo</artifactId>
+   <version>0.0.1-SNAPSHOT</version>
   <description>various project for bezier intersect and k-mean partitioning</description>
   
   <modules>

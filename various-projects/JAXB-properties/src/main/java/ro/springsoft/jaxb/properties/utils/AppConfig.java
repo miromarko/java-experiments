@@ -13,7 +13,7 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.*;
 
 /**
- * @author Miroslav MARKO <mmarko@gmanalytics.com>
+ * @author Miroslav MARKO <mmarko@springsoft.com>
  */
 @XmlRootElement(name = "app-config")
 @XmlAccessorType(XmlAccessType.NONE)

@@ -13,7 +13,6 @@
   <name>web</name>
   <url>http://maven.apache.org</url>
   <modules>
-    <module>primefaces-starter</module>
     <module>struts1-sample</module>
     <module>guice-resteasy</module>
     <module>ClickTest</module>

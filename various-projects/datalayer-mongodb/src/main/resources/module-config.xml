@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <!-- mongodb settings -->
+    <entry key="mongoHosts">localhost</entry>
+    <entry key="mongoPorts">27017</entry>
+    <!--NONE, SHARDING, REPLICA-->
+    <entry key="mongoCluser">NONE</entry>
+    <entry key="connectionsPerHost">20</entry>
+    <entry key="threadsAllowedToBlockForConnectionMultiplier">100</entry>
+
+    <entry key="mongoDB">TEST_DB</entry>
+
+    <entry key="mongoLazyContextThNr">10</entry>
+
+    <!-- mongo common -->
+    <entry key="nrRetriesMongo">3</entry>
+    <entry key="mongoRetriesThreadSleep">300</entry>
+
+    <entry key="pass_digest">MD5</entry>
+    <entry key="pass_encoding">UTF-8</entry>
+
+</properties>
